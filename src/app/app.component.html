@@ -1,0 +1,50 @@
+<app-navbar>
+  <a class="bg-red-50 text-red-500 px-2 py-1 rounded">Login</a>
+</app-navbar>
+
+<div class="pt-8 px-4">
+  <input
+    type="number"
+    name="numero1"
+    placeholder="numero1"
+    [(ngModel)]="numero1"
+  />
+  <input
+    type="number"
+    name="numero2"
+    placeholder="numero2"
+    [(ngModel)]="numero2"
+  />
+  <br />
+  <input
+    type="radio"
+    name="operacion"
+    value="1"
+    (change)="onSelect($event)"
+  />SUMA
+
+  <input
+    type="radio"
+    name="operacion"
+    value="2"
+    (change)="onSelect($event)"
+  />RESTA
+
+  <input
+    type="radio"
+    name="operacion"
+    value="3"
+    (change)="onSelect($event)"
+  />MULTIPLICACION
+
+  <input
+    type="radio"
+    name="operacion"
+    value="4"
+    (change)="onSelect($event)"
+  />DIVISION
+
+  {{ resultado }}
+
+  <p>Resize the view to see some magic happen :)</p>
+</div>
